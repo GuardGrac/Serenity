@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="mx-auto bg-black overflow-x-hidden">
-    <nav class="container min-w-fit max-w-full bg-transparent text-white z-40 py-5 fixed mx-auto">
+<body class="bg-black overflow-x-hidden">
+    <nav class=" w-screen bg-transparent text-white z-40 py-5 fixed mx-auto">
             <div class="flex flex-row justify-between text-center items-center text-nowrap mx-5">
                 <div class="flex flex-row text-center items-center">
                     <span class="mx-5 text-5xl italiana">
@@ -22,32 +22,79 @@
                     </p>
                 </div>
                 <div class="flex flex-row text-center items-center">
-                    <p class="mx-5">
+                    <p class="mx-20">
                         +7 905 360 5555
-                    </p>
-                    <p class="mx-5">
-                        ggg
                     </p>
                 </div>
             </div>
     </nav>
-    <img class="absolute h-screen w-screen z-[-1] object-cover object-top select-none" src="/img/back.png" alt="">
-    <header class="container ml-[10rem] w-fit flex flex-col justify-center bg-transparent pt-[10rem] h-[100vh] w-[100vh]">
-        <span class="my-5 text-6xl uppercase leading-[5rem] italiana font-[100]">
-            Студия интерьерного<br>
-            дизайна
-        </span>
-        <p class="my-5 italiana italic text-2xl">
-            Превращаем пространство в искусство
-        </p>
-        <button class="flex flex-row justify-around items-center w-[170px] h-[40px] bg-[#F7B794] text-black my-5">
-            Подробнее
-            <svg class="m-2 -rotate-[90deg]" width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="black"/>
-                </svg>
+    <div class="slider w-screen h-screen">
+        <div class="slide w-screen h-screen">
+            <button class="nav__toggle-menu z-[100] mt-5 mr-5 relative">
+                <span></span>
+            </button>
+            <img class="absolute h-screen w-screen z-[-1] object-cover object-top select-none" src="/img/back.png" alt="">
+            <header class=" ml-[10rem] w-fit flex flex-col justify-center bg-transparent pt-[10rem] h-[100vh] w-[100vh]">
+                <span class="my-5 text-6xl uppercase leading-[5rem] italiana font-[100]">
+                    Студия интерьерного<br>
+                    дизайна
+                </span>
+                <p class="my-5 italiana italic text-2xl">
+                    Превращаем пространство в искусство
+                </p>
+                <button class="flex flex-row justify-around items-center w-[170px] h-[40px] bg-[#F7B794] text-black rounded my-5">
+                    Подробнее
+                    <svg class="m-2 -rotate-[90deg]" width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="black"/>
+                        </svg>
+                </button>
+            </header>
+        </div>
+        <div class="slide w-screen h-screen">
+            <button class="nav__toggle-menu z-[100] mt-5 mr-5 relative">
+                <span></span>
+            </button>
+            <img class="absolute h-screen w-screen z-[-1] object-cover object-top select-none" src="/img/back.png" alt="">
+            <header class=" ml-[10rem] w-fit flex flex-col justify-center bg-transparent pt-[10rem] h-[100vh] w-[100vh]">
+                <span class="my-5 text-6xl uppercase leading-[5rem] italiana font-[100]">
+                    Студия интерьерного<br>
+                    дизайна
+                </span>
+                <p class="my-5 italiana italic text-2xl">
+                    Превращаем пространство в искусство
+                </p>
+                <button class="flex flex-row justify-around items-center w-[170px] h-[40px] bg-[#F7B794] text-black rounded my-5">
+                    Подробнее
+                    <svg class="m-2 -rotate-[90deg]" width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="black"/>
+                    </svg>
+                </button>
+            </header>
+        </div>
+        <button class="btn btn-next"> 
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.35913 14.6985H20.9825" stroke="#E0E0E0"/>
+                <path d="M18.0311 11.5193L21.2099 14.6981L18.0311 17.8769" stroke="#E0E0E0"/>
+                <g opacity="0.7">
+                <circle cx="14.907" cy="15.0927" r="13.9072" stroke="#E0E0E0"/>
+                </g>
+            </svg>                               
         </button>
-    </header>
-    <section class="container min-w-fit max-w-full h-[50vh] flex flex-row text-center justify-around pt-[5rem] text-xl">
+        <svg class="absolute top-[91.5%] left-[50%]" width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.27147 16.7208C1.4857 19.2272 3.62235 21.3555 6.37636 21.6708C7.3891 21.7866 8.41876 21.868 9.4622 21.868C10.5056 21.868 11.5353 21.7866 12.548 21.6708C15.3021 21.3555 17.4386 19.2272 17.6529 16.7208C17.8014 14.984 17.9245 13.2026 17.9245 11.3874C17.9245 9.57218 17.8014 7.79075 17.6529 6.05397C17.4386 3.54749 15.3021 1.41917 12.548 1.10398C11.5353 0.988086 10.5056 0.906738 9.4622 0.906738C8.41876 0.906738 7.3891 0.988086 6.37636 1.10398C3.62235 1.41917 1.4857 3.54749 1.27147 6.05397C1.12302 7.79075 1 9.57218 1 11.3874C1 13.2026 1.12302 14.984 1.27147 16.7208Z" stroke="#E0E0E0"/>
+            <path d="M9.46484 5.09473L9.46484 8.23892" stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>            
+        <button class="btn btn-prev"> 
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
+                <path d="M11.7828 18.6663L8.60402 15.4875L11.7828 12.3087" stroke="#E0E0E0"/>
+                <g opacity="0.7">
+                <circle cx="14.907" cy="15.0928" r="13.9072" transform="rotate(-180 14.907 15.0928)" stroke="#E0E0E0"/>
+                </g>
+            </svg>                
+        </button>
+     </div>
+    <section class=" min-w-fit max-w-full h-[50vh] flex flex-row text-center justify-around pt-[5rem] text-xl">
         <div class="flex flex-col">
             <p class="text-6xl pb-5">
                 100%
@@ -85,7 +132,7 @@
             </p>
         </div>
     </section>
-    <section class="container flex w-screen z-1 justify-center h-screen items-center pt-[5rem] mx-auto">
+    <section class=" flex w-screen z-1 justify-center h-screen items-center pt-[5rem] mx-auto">
         <div class="flex flex-row relative justify-around items-center mx-auto basis-10/12">
             <span class="text-5xl absolute uppercase italiana font-[1] leading-[5rem] -top-32 -left-5" style="user-select: none;">
                 Студия Serinity это творческое<br>
@@ -108,7 +155,7 @@
             </div>
         </div>
     </section>
-    <section class="container flex w-screen z-1 justify-center h-screen items-center pt-[5rem] mx-auto">
+    <section class=" flex w-screen z-1 justify-center h-screen items-center pt-[5rem] mx-auto">
         <div class="flex flex-row justify-around items-center mx-auto basis-10/12">
                 <img class="h-fit w-fit" src="/img/second_block.png" alt="">
             <div class="flex flex-col basis-[48%]">
@@ -159,9 +206,9 @@
             </div>
         </div>
     </section>
-    <section class="container flex w-screen z-1 justify-center h-screen items-center mt-[10vh] mx-auto">
+    <section class=" flex w-screen z-1 justify-center h-screen items-center mt-[10vh] mx-auto">
         <div class="flex flex-row relative justify-around items-center mx-auto basis-10/12">
-            <div class="flex flex-col absolute -bottom-52 -left-32 font-[500]">
+            <div class="flex flex-col absolute -bottom-52 left-20 font-[500]">
                 <span class="text-4xl uppercase italiana font-[1] leading-[3.5rem] pb-8">
                     С помощью грамотного<br>
                     интерьера обеспечим выход<br>
@@ -178,10 +225,10 @@
                     </button> 
                 </div>
             </div>
-            <img class="h-[100vh] order-last absolute -right-[20%]" style="user-select: none; z-index: -1!important;" src="/img/third_block.png" alt="">
+            <img class="h-[120vh] order-last absolute -right-[20%]" style="user-select: none; z-index: -1!important;" src="/img/third_block.png" alt="">
         </div>
     </section>
-      <section class="container flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
+      <section class=" flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
         <div class="flex flex-col w-screen justify-around items-center mx-auto">
             <p class="pr-96 text-5xl py-4 uppercase">
                 П<span class="-tracking-[1.25rem] -ml-[0.25rem] pr-4">ос</span>мотрите наши
@@ -247,14 +294,14 @@
             </div>
         </div>
     </section>
-    <section class="container flex flex-col w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
-        <span class="my-5 w-[95%] text-6xl uppercase leading-[5rem] italiana font-[100] text-start">
-            Нашему опыту и профессионализму<br>
-            <span class="text-[#F7B794] ">
-               доверяют:  
+    <section class="flex flex-col w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
+        <span class="flex flex-col my-5 w-screen text-6xl uppercase leading-[5rem] text-start italiana pl-56 font-[100]">
+            Нашему опыту и профессионализму
+            <span class="text-[#F7B794] text-start">
+                доверяют:  
             </span>
         </span>
-        <div class="flex flex-row w-[95%] h-fit items-center divide-x divide-slate-300/30 justify-center pt-20">
+        <div class="flex flex-row w-screen h-fit items-center divide-x divide-slate-300/30 justify-center pt-20">
             <div class="flex flex-col w-[220px] h-[45vh] divide-y divide-slate-300/30 items-center justify-between">
                 <div class="w-full h-full flex items-center justify-center">
                     <img src="/icons/1-5-icon.png" alt="">
@@ -313,7 +360,7 @@
             </div>
         </div>
     </section>
-    <section class="container flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
+    <section class=" flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
         <div class="flex flex-col w-screen h-screen justify-evenly items-start mx-auto">
             <div class="pl-56 text-7xl uppercase mb-20">
                 <p>Блог
@@ -386,9 +433,9 @@
             </div>
         </div>
     </section>
-    <section class="container flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
+    <section class=" flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-20">
         <div class="flex flex-col w-screen h-screen justify-evenly items-start mx-auto">
-            <div class="pl-56 text-7xl uppercase mb-20">
+            <div class="pl-44 text-7xl uppercase mb-20">
                 <p>Что говорят наши клиенты о 
                     <span class="pb-5 text-[#F7B794]">
                         нас
@@ -399,17 +446,77 @@
                     свидетельством нашего мастерства и профессионализма.
                 </p>
             </div>
-            <div class="flex flex-row w-screen h-screen justify-center items-center mx-auto">
-                
+            <div class="flex flex-row w-full h-screen justify-evenly items-center">
+                <div class="flex mx-10 flex-col h-[450px] w-[400px] bg-white/5">
+                    <blockquote class="text-pretty pl-10 p-10">
+                        <p>Сергей и его команда всегда были готовы помочь мне в любое время с моим сайтом.</p>
+                        <footer class="text-[#F7B794]"><br>Климова Ольга</footer>
+                  </blockquote>
+                </div>
+                <div class="flex mx-10 flex-col w-[400px] h-[450px] bg-white/5">
+                    <blockquote class="text-pretty pl-10 p-10">
+                        <p>Сергей и его команда всегда были готовы помочь мне в любое время с моим сайтом.</p>
+                        <footer class="text-[#F7B794]"><br>Климов Дмитрий</footer>
+                  </blockquote>
+                </div>
+                <div class="flex mx-10 flex-col w-[400px] h-[450px] bg-white/5">
+                    <blockquote class="text-pretty pl-10 p-10">
+                        <p>Сергей и его команда всегда были готовы помочь мне в любое время с моим сайтом.</p>
+                        <footer class="text-[#F7B794]"><br>Егоров Михаил</footer>
+                  </blockquote>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="flex w-screen justify-center h-[50vh] items-center mt-[50vh] mx-auto">
+        <div class="flex flex-col w-screen items-center leading-[2rem]">
+            <span class="mx-5 text-7xl text-center relative line1">
+            SERENITY
+            </span>
+            <p class="text-lg text-[100]">
+                Превращаем пространство в искусство
+            </p>
+            <div class="flex flex-row justify-evenly items-center w-[100px] pt-20">
+                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M3.60924 10.4295L5.47485 16.797L7.90363 13.4809L12.0679 18L15 0L0 8.53063L3.60924 10.4295ZM10.7137 5.16438L6.12247 10.882L5.55061 13.8247L4.49421 10.2181L10.7137 5.16438Z" fill="#FBF9FD"/>
+                </svg>
+                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.8">
+                <path d="M18.5723 6.45817C18.8555 5.96047 19.0804 5.56112 19.2465 5.25984C20.4426 3.09845 20.9611 1.71774 20.8022 1.11578L20.7399 0.974796C20.6984 0.890116 20.591 0.812353 20.4183 0.741965C20.2454 0.671627 20.0242 0.660388 19.7547 0.706822L16.7677 0.735456C16.6986 0.726098 16.6294 0.728284 16.5602 0.741965C16.4911 0.756256 16.4462 0.770598 16.4253 0.784279C16.4045 0.798621 16.3873 0.810116 16.3736 0.819474L16.3322 0.861788C16.2976 0.889811 16.2596 0.939297 16.2181 1.00999C16.1766 1.08063 16.1418 1.16251 16.1144 1.25681C15.7894 2.3938 15.4196 3.45115 15.0047 4.4285C14.7488 5.01119 14.5136 5.51667 14.2995 5.94368C14.0851 6.37166 13.9054 6.68637 13.7601 6.88803C13.615 7.09004 13.4835 7.25248 13.3661 7.37423C13.2484 7.49685 13.1586 7.54822 13.0965 7.52956C13.0342 7.51089 12.9754 7.49223 12.9202 7.4729C12.8233 7.38858 12.7454 7.27369 12.6868 7.12772C12.628 6.98242 12.5884 6.79902 12.5675 6.57804C12.5469 6.35737 12.5345 6.1669 12.5313 6.0069C12.5276 5.84725 12.5295 5.6219 12.5366 5.33023C12.5435 5.03886 12.5469 4.84188 12.5469 4.73823C12.5469 4.38151 12.5522 3.99371 12.5625 3.5754C12.5728 3.15739 12.5815 2.8259 12.5884 2.58152C12.5953 2.3375 12.5987 2.07883 12.5987 1.80618C12.5987 1.53414 12.5865 1.31997 12.5622 1.1647C12.5379 1.00999 12.5015 0.859652 12.4534 0.713688C12.4049 0.568334 12.3341 0.455326 12.2407 0.375681C12.1473 0.295681 12.0316 0.232514 11.8933 0.185165C11.5266 0.0721571 11.0599 0.0117877 10.4931 0.00187024C9.20701 -0.0161846 8.38074 0.0964675 8.01432 0.340487C7.86913 0.444137 7.73768 0.584812 7.62022 0.763478C7.49565 0.970473 7.47847 1.08343 7.56846 1.10148C7.98341 1.18616 8.27705 1.38848 8.44993 1.70782L8.51223 1.87682C8.56054 1.99944 8.60889 2.21549 8.65742 2.52548C8.70577 2.83551 8.7369 3.1785 8.75086 3.5545C8.78543 4.24048 8.78543 4.82754 8.75086 5.31655C8.71628 5.8055 8.68354 6.18587 8.65241 6.45791C8.62124 6.73057 8.57454 6.95124 8.51246 7.12025C8.45015 7.28986 8.40873 7.3932 8.38789 7.43084C8.36704 7.46817 8.34987 7.49182 8.33613 7.50123C8.24614 7.54792 8.15293 7.57157 8.05608 7.57157C7.9592 7.57157 7.8417 7.50555 7.7034 7.37388C7.56506 7.24287 7.42148 7.06171 7.27307 6.83137C7.12422 6.60139 6.9568 6.27925 6.76992 5.86556C6.58327 5.45254 6.38951 4.96354 6.18913 4.39987L6.02332 3.99086C5.91959 3.72818 5.77781 3.34501 5.59805 2.84232C5.41828 2.33964 5.2591 1.85348 5.12102 1.38319C5.0656 1.18616 4.98268 1.03583 4.8721 0.932176L4.82035 0.889862C4.78577 0.852481 4.73035 0.812354 4.65432 0.770294C4.57805 0.727979 4.49884 0.697464 4.41569 0.678493L1.57391 0.706517C1.28353 0.706517 1.08659 0.79618 0.982863 0.974796L0.941402 1.05917C0.920447 1.10647 0.910156 1.18179 0.910156 1.28483C0.910156 1.38848 0.930999 1.51517 0.97246 1.6652C1.38741 2.99053 1.83858 4.26855 2.3259 5.49923C2.81348 6.73057 3.23693 7.72221 3.59646 8.4739C3.95599 9.2262 4.3224 9.93522 4.69593 10.6025C5.06945 11.2699 5.31654 11.6972 5.43744 11.8849C5.55834 12.0732 5.65339 12.2142 5.72258 12.3079L5.98182 12.6465C6.14763 12.8719 6.39153 13.142 6.71308 13.457C7.0346 13.772 7.3905 14.082 7.78142 14.3871C8.1719 14.6927 8.6267 14.9414 9.14515 15.1344C9.66364 15.3274 10.1684 15.4048 10.6593 15.3669H11.8521C12.0941 15.3388 12.2773 15.2359 12.4017 15.0568L12.4431 14.9865C12.4706 14.9305 12.4967 14.8433 12.521 14.7259C12.545 14.6086 12.5574 14.4791 12.5574 14.3385C12.5503 13.9345 12.573 13.5697 12.6248 13.246C12.6765 12.9216 12.7353 12.6776 12.8011 12.5127C12.8668 12.3486 12.941 12.2098 13.0241 12.0968C13.1071 11.9838 13.1657 11.9163 13.2005 11.8926C13.235 11.8696 13.2628 11.8531 13.2834 11.8431C13.4492 11.7681 13.6445 11.8409 13.8694 12.0616C14.0941 12.283 14.305 12.5549 14.5022 12.8793C14.6991 13.2036 14.9359 13.5674 15.2126 13.9718C15.489 14.3757 15.731 14.6764 15.9385 14.8737L16.146 15.0434C16.2843 15.1558 16.4638 15.2591 16.6853 15.3534C16.9065 15.4471 17.1003 15.4708 17.2661 15.4238L19.9212 15.3671C20.1839 15.3671 20.3879 15.3086 20.5331 15.1909C20.6783 15.0742 20.7647 14.9441 20.7924 14.8035C20.8199 14.6625 20.8217 14.5034 20.7977 14.3244C20.7734 14.1461 20.7491 14.0216 20.7251 13.9512C20.7009 13.8809 20.6783 13.8217 20.6575 13.775C20.3117 12.9294 19.6515 11.8907 18.6766 10.6597L18.6557 10.6317L18.6454 10.6174L18.6351 10.6037H18.6247C18.1821 10.0303 17.9022 9.64497 17.7847 9.44733C17.5704 9.072 17.5218 8.69132 17.6395 8.30601C17.722 8.01383 18.033 7.39819 18.5723 6.45817Z" fill="#FBF9FD"/>
+                </g>
+                </svg>         
+            </div> 
+            <div class="flex flex-row w-[90%] items-center pt-20 justify-between">
+                <span>
+                    © Serenity Interior. Все права защищены️
+                </span>
+                <span class="pr-36">
+                    Политика конфиденциальности
+                </span>
+                <span>
+                    Разработано в  Hello
+                </span>
+            </div> 
+        </div>
+    </footer>
+    <div id="menu" class="flex justify-center text-center items-center">
+        <nav class="main-header">
+            <ul>
+                <li>
+                    <a href="" class="mx-5 text-5xl italiana">
+                        SERENITY 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
      <script src="https://cdn.tailwindcss.com"></script>
+     <script src="/js/slider.js"></script>
      <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-     <script src="/common.blocks/burger/burger.js"></script>
+     <script src="/js/burger/burger.js"></script>
      <script src="/js/lenis/lenis.js"></script>
 </body>
 </html>
