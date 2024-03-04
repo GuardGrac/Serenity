@@ -80,10 +80,15 @@
                 </g>
             </svg>                               
         </button>
-        <svg class="absolute top-[91.5%] left-[50%]" width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.27147 16.7208C1.4857 19.2272 3.62235 21.3555 6.37636 21.6708C7.3891 21.7866 8.41876 21.868 9.4622 21.868C10.5056 21.868 11.5353 21.7866 12.548 21.6708C15.3021 21.3555 17.4386 19.2272 17.6529 16.7208C17.8014 14.984 17.9245 13.2026 17.9245 11.3874C17.9245 9.57218 17.8014 7.79075 17.6529 6.05397C17.4386 3.54749 15.3021 1.41917 12.548 1.10398C11.5353 0.988086 10.5056 0.906738 9.4622 0.906738C8.41876 0.906738 7.3891 0.988086 6.37636 1.10398C3.62235 1.41917 1.4857 3.54749 1.27147 6.05397C1.12302 7.79075 1 9.57218 1 11.3874C1 13.2026 1.12302 14.984 1.27147 16.7208Z" stroke="#E0E0E0"/>
-            <path d="M9.46484 5.09473L9.46484 8.23892" stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>            
+        <button id="scroll-button" class="mouse">
+            <svg class="absolute top-[91.5%] left-[50%]" width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.27147 16.7208C1.4857 19.2272 3.62235 21.3555 6.37636 21.6708C7.3891 21.7866 8.41876 21.868 9.4622 21.868C10.5056 21.868 11.5353 21.7866 12.548 21.6708C15.3021 21.3555 17.4386 19.2272 17.6529 16.7208C17.8014 14.984 17.9245 13.2026 17.9245 11.3874C17.9245 9.57218 17.8014 7.79075 17.6529 6.05397C17.4386 3.54749 15.3021 1.41917 12.548 1.10398C11.5353 0.988086 10.5056 0.906738 9.4622 0.906738C8.41876 0.906738 7.3891 0.988086 6.37636 1.10398C3.62235 1.41917 1.4857 3.54749 1.27147 6.05397C1.12302 7.79075 1 9.57218 1 11.3874C1 13.2026 1.12302 14.984 1.27147 16.7208Z" stroke="#E0E0E0"/>
+                <g class="mouse-anim">
+                    <path d="M9.46484 5.09473L9.46484 8.23892" stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </svg>   
+        </button>
+                 
         <button class="btn btn-prev"> 
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
@@ -94,7 +99,7 @@
             </svg>                
         </button>
      </div>
-    <section class=" min-w-fit max-w-full h-[50vh] flex flex-row text-center justify-around pt-[5rem] text-xl">
+    <section class="min-w-fit max-w-full h-[50vh] flex flex-row text-center justify-around pt-[5rem] text-xl" id="section_case">
         <div class="flex flex-col">
             <p class="text-6xl pb-5">
                 100%
@@ -226,6 +231,17 @@
                 </div>
             </div>
             <img class="h-[120vh] order-last absolute -right-[20%]" style="user-select: none; z-index: -1!important;" src="/img/third_block.png" alt="">
+            <div class="absolute bottom-[250px] left-[300px]">
+                 <svg id="circle" width="430" height="430" viewBox="0 0 430 430" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" class="path-circle" id="path-circle" d="M390.5 194.5C390.5 96 308.5 0.500012 195.5 0.5C82.5 0.499988 0.500011 97.5 0.5 194.5C0.49999 283 83.5 388 195.5 388C314.5 388 390.5 284 390.5 194.5Z" stroke="white"/>
+                        <text fill="white" class="text-anim3" font-size="22">
+                            <textPath href="#path-circle" startOffset="0">
+                                ABLALALALALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                            </textPath>
+                        </text>    
+                </svg>
+            </div>
+                                          
         </div>
     </section>
       <section class=" flex w-screen z-1 justify-center h-screen items-center mt-[50vh] mx-auto">
@@ -514,9 +530,46 @@
      <script src="/js/slider.js"></script>
      <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
      <script src="/js/burger/burger.js"></script>
      <script src="/js/lenis/lenis.js"></script>
+     <script>
+        console.clear(); // Start with a clean console on refesh
+        gsap.defaults({ease: "none"});
+        const tl = gsap.timeline( {repeat:-1, repeatDelay: 1} )
+        .to('.mouse-anim',{
+            opacity: 0.1,
+            y:5,
+        });
+ 
+        const scrollButton = document.querySelector('#scroll-button');
+        const sectionCases = document.querySelector('#section_case');
+        scrollButton.addEventListener('click', () => {
+        console.warn(sectionCases);
+        gsap.to(window, {
+            duration: 1.5,
+            scrollTo: sectionCases,
+            ease: "power2"
+        });
+        });
+
+        const main3 = gsap.timeline({
+            scrollTrigger:{
+                trigger: "#circle",
+                scrub: 1,
+                start: "top 100%",
+                end: "+=1300"
+            }
+        })
+        main3.set(".text-anim3", { transformOrigin: "50% 50%" });
+        main3.to(".text-anim3",{
+            duration: 10,
+            ease: "none",
+            rotation: "+=360",   
+        })
+    </script>
 </body>
 </html>
