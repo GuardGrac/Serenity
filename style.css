@@ -1,3 +1,7 @@
+@font-face { 
+	font-family: 'FoglihtenNo06'; 
+	src: local('FoglihtenNo06'), url('../public/uploads/fonts/foglihtenno06.woff2') format('woff2'), url('../public/uploads/fonts/foglihtenno06.woff') format('woff'), url('../public/uploads/fonts/FoglihtenNo06.ttf') format('truetype'); 
+  }
 *{
     margin: 0;
     padding: 0;
@@ -71,13 +75,13 @@ html, body{
   transform: scale(1.2);
 }
 .btn-prev {
-  top: 90%;
-  left: 2%;
+  top: 91.5%;
+  left: 3.5%;
 }
 
 .btn-next {
-  top: 90%;
-  right: 2%;
+  top: 91.5%;
+  right: 3.5%;
 }
 
 #menu {
