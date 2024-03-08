@@ -84,6 +84,13 @@ html, body{
   right: 3.5%;
 }
 
+.swiper-fade{
+	opacity: 0.5;
+}
+.swiper-slide{
+	transition: 0.3s;
+}
+
 #menu {
 	background: #bdb7b3;
 	height: 100%;
