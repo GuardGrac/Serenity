@@ -91,6 +91,10 @@ html, body{
 	transition: 0.3s;
 }
 
+.sec-exp img{
+scale: 1.35;
+}
+
 #menu {
 	background: #bdb7b3;
 	height: 100%;

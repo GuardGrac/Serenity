@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: white
 }
 
 :host {
@@ -33,7 +33,6 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
     list-style: none;
     padding: 0;
     z-index: 1;
@@ -53,6 +52,10 @@
     transition-property: transform;
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box
+}
+
+.mySwiperDiag .swiper-wrapper{
+    rotate: 10deg;
 }
 
 .swiper-android .swiper-slide,
@@ -76,6 +79,10 @@
     position: relative;
     transition-property: transform;
     display: block
+}
+
+.mySwiperDiag .swiper-slide{
+    rotate: -10deg;
 }
 
 .swiper-slide-invisible-blank {
@@ -279,17 +286,22 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 50%);
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
+    top:60vh;
+    z-index: 255;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--swiper-navigation-color, var(--swiper-theme-color))
 }
+
+.mySwiperDiag .swiper-button-next,
+.mySwiperDiag .swiper-button-prev {
+    top:120vh
+}
+
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -324,19 +336,27 @@
 }
 
 .swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 10px);
-    right: auto
+.swiper-rtl{
+    left: var(--swiper-navigation-sides-offset, 5vw);
 }
 
 .swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 10px);
-    left: auto
+.swiper-rtl{
+    right: var(--swiper-navigation-sides-offset, 15vw); 
 }
 
-.swiper-button-lock {
-    display: none
+.mySwiperDiag .swiper-button-prev,
+.swiper-rtl{
+    right: 5vw !important;
+}
+
+.mySwiperDiag .swiper-button-next,
+.swiper-rtl{
+    right: 5vw !important; 
+}
+.sec-biznes .swiper-button-next,
+.sec-biznes .swiper-button-prev  {
+top: 107vh
 }
 
 .swiper-button-next:after,
@@ -353,13 +373,6 @@
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
     content: 'prev'
-}
-
-
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 10px);
-    left: auto
 }
 
 .swiper-button-next:after,
