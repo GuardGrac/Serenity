@@ -56,6 +56,7 @@
 
 .mySwiperDiag .swiper-wrapper{
     rotate: 10deg;
+    right: 4vw;
 }
 
 .swiper-android .swiper-slide,
@@ -801,4 +802,28 @@ button.swiper-pagination-bullet {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden
+}
+
+@media (max-width: 768px){
+    .mySwiperDiag .swiper-wrapper{
+        rotate: 0deg;
+    }
+    .mySwiperDiag .swiper-slide{
+        rotate: 0deg;
+    }
+    .mySwiperDiag .swiper-wrapper{
+        right: 1vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+	.mySwiperDiag .swiper-wrapper{
+        right: 5vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.mySwiperDiag .swiper-wrapper{
+        right: 7vw;
+	}
 }

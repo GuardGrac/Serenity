@@ -291,13 +291,14 @@
                 вы полюбите с первого взгляда
                 </p>
             </div>
-            <div class="mySwiperDiag swiper w-[100vw] h-[100vh]">
-                <div class="swiper-wrapper flex flex-row w-[100%] h-screen pt-[10vh]">  
-                        <div class="flex swiper-slide flex-col py-5 w-fit h-fit">
-                            <button class="bg-transparent flex flex-col justify-center items-center w-full h-[730px]">
-                                <img class="h-[730px] w-full" src="/img/fourth_block1.png" alt="">
-                                <div class="flex flex-row items-center justify-between w-[100%] pl-[90px] tracking-[0.055rem]">
-                                        <p class="pt-[44px] text-3xl text-start">
+            <div class="pt-[10vh]"></div>
+            <div class="mySwiperDiag swiper w-[95vw] h-[100vh]">
+                <div class="swiper-wrapper flex flex-row w-screen h-screen">  
+                        <div class="flex swiper-slide flex-col swipe-size">
+                            <img class="slider-img" src="/img/fourth_block1.png" alt="">
+                            <button class="bg-transparent flex flex-col justify-between items-start slider-img">
+                                <div class="flex flex-row items-center justify-between pl-[2vw] tracking-[0.055rem] w-full">
+                                        <p class="pt-[2vh] text-3xl text-start">
                                             ЖК "ЛИСТ ЖИЗНИ"<br>
                                             <span class="text-xl">
                                                 100 кв.м. <span class="pl-5">Астрахань</span> 
@@ -309,11 +310,11 @@
                                 </div>                    
                             </button>
                         </div>
-                        <div class="flex flex-col swiper-slide w-fit h-fit">
-                            <button class="bg-transparent flex flex-col justify-center items-center w-full h-[730px]">
-                                <img class="h-[730px] w-full" src="/img/fourth_block2.png" alt="">
-                                <div class="flex flex-row items-center justify-between w-[100%] pl-[70px]">
-                                        <p class="pt-[38px] text-3xl text-start">
+                        <div class="flex flex-col swiper-slide swipe-size">
+                            <img class="slider-img" src="/img/fourth_block2.png" alt="">
+                            <button class="bg-transparent flex flex-col justify-between items-start slider-img">
+                                <div class="flex flex-row items-center justify-between pl-[2vw] w-full">
+                                        <p class="pt-[2vh] text-3xl text-start">
                                             ЖК “ВРЕМЕНА ГОДА”<br>
                                             <span class="text-xl">
                                                 130 кв.м. <span class="pl-7">Астрахань</span>
@@ -325,11 +326,11 @@
                                 </div>                    
                             </button>
                         </div>
-                        <div class="flex flex-col swiper-slide py-5 w-fit h-fit">
-                            <button class="bg-transparent flex flex-col justify-center items-center w-full h-[730px]">
-                                <img class="h-[730px] w-full" src="/img/fourth_block3.png" alt="">
-                                <div class="flex flex-row items-center justify-between w-[100%] pl-[40px]">
-                                        <p class="pt-[64px] text-3xl text-start">
+                        <div class="flex flex-col swiper-slide swipe-size">
+                            <img class="slider-img" src="/img/fourth_block3.png" alt="">
+                            <button class="bg-transparent flex flex-col justify-between items-start slider-img">
+                                <div class="flex flex-row items-center justify-between pl-[2vw] w-full">
+                                        <p class="pt-[2vh] text-3xl text-start">
                                             ЖК “ГАГАРИН”<br>
                                             <span class="text-xl">
                                                 230 кв.м. <span class="pl-5">Астрахань</span>
@@ -341,11 +342,11 @@
                                 </div>                    
                             </button>
                         </div>
-                        <div class="flex flex-col swiper-slide py-5 w-fit h-fit">
-                            <button class="bg-transparent flex flex-col justify-center items-center w-full h-[730px]">
-                                <img class="h-[730px] w-full" src="/img/fourth_block3.png" alt="">
-                                <div class="flex flex-row items-center justify-between w-[100%] pl-[40px]">
-                                        <p class="pt-[64px] text-3xl text-start">
+                        <div class="flex flex-col swiper-slide swipe-size">
+                            <img class="slider-img" src="/img/fourth_block3.png" alt="">
+                            <button class="bg-transparent flex flex-col justify-between items-start slider-img">
+                                <div class="flex flex-row items-center justify-between pl-[2vw] w-full">
+                                        <p class="pt-[2vh] text-3xl text-start">
                                             ЖК “ГАГАРИН”<br>
                                             <span class="text-xl">
                                                 230 кв.м. <span class="pl-5">Астрахань</span>
@@ -656,14 +657,23 @@
   }); 
 
   const swiperDiag = new Swiper(".mySwiperDiag", {
-      slidesPerView: 3,
-      spaceBetween: 100,
-      loop: true,
-      navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },  
-    });
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        breakpoints: {
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 100,
+        },
+        1440: {
+        slidesPerView: 3,
+        spaceBetween: 100,
+        }  
+        }});
      </script>
      <script>
         console.clear(); // Start with a clean console on refesh
