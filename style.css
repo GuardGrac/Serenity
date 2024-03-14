@@ -255,10 +255,8 @@ scale: 1.35;
 
 
 @media (max-width: 768px){
-	.slider-img{
-		/* min-width: calc(40vw);
-		min-height: calc(30vh); */
-		/* max-width: calc(80vw); */
-	}
+	.sec-exp img{
+		scale: 1;
+		}
 }
 
