@@ -100,14 +100,14 @@ scale: 1.35;
 	height: 100%;
 	left: 0;
 	opacity: 0;
-	overflow: hidden;
 	position: fixed;
 	text-align: center;
-	top: 0px;
+	top: 65px;
 	transition: all 0.7s ease-in-out;
 	visibility: hidden;
 	width: 100%;
-	z-index: 90;
+	overflow: hidden;
+	z-index: 100;
 }
 #menu.open {
 	opacity: 1;
@@ -183,9 +183,10 @@ scale: 1.35;
 	pointer-events: initial;
 	vertical-align: middle;
 	width: 50px;
-	z-index: 1110;
+	z-index: 1100;
   margin: 0px;
 }
+
 .nav__toggle-menu span {
 	background-color: #fff;
 	content: "";
@@ -237,22 +238,22 @@ scale: 1.35;
 .swipe-size{
 	height: 20vh;
 }
-@media (min-width: 1440px) {
-	.slider-img{
-		/* min-width: calc(30vw);
-		min-height: calc(20vh); */
-		/* max-width: calc(30vw); */
-	}
+
+.scroll-down nav{
+	transform: translate3d(0, -100%, 0);
+	transition: all 0.5s;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
-	.slider-img{
-		/* min-width: calc(40vw);
-		min-height: calc(30vh); */
-		/* max-width: calc(40vw); */
-	}
+.scroll-up nav{
+	filter: drop-shadow(0 -10 20px rgb(0, 0, 0));
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
 }
 
+.nav-up nav{
+	background: #bdb7b3;
+	transition: all 0.7s ease-in-out;
+}
 
 @media (max-width: 768px){
 	.sec-exp img{

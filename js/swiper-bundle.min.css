@@ -59,6 +59,10 @@
     right: 4vw;
 }
 
+.mySwiper .swiper-wrapper{
+    left: 5vw;
+}
+
 .swiper-android .swiper-slide,
 .swiper-ios .swiper-slide,
 .swiper-wrapper {
@@ -337,7 +341,7 @@
 
 .swiper-button-next,
 .swiper-rtl{
-    right: var(--swiper-navigation-sides-offset, 15vw); 
+    right: var(--swiper-navigation-sides-offset, 5vw); 
 }
 
 .mySwiperDiag .swiper-button-prev,
@@ -349,9 +353,19 @@
 .swiper-rtl{
     right: 5vw !important; 
 }
+
 .sec-biznes .swiper-button-next,
 .sec-biznes .swiper-button-prev  {
 top: 107vh
+}
+
+.mySwiper .swiper-button-prev,
+.swiper-rtl{
+    left: 10vw !important;
+}
+.mySwiper .swiper-button-next,
+.swiper-rtl{
+    right: 10vw !important; 
 }
 
 .swiper-button-next:after,
