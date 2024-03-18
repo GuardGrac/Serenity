@@ -60,7 +60,7 @@
 }
 
 .mySwiper .swiper-wrapper{
-    left: 5vw;
+    left: 2vw;
 }
 
 .swiper-android .swiper-slide,
@@ -812,6 +812,12 @@ button.swiper-pagination-bullet {
     overflow: hidden
 }
 
+@media (max-width: 500px){
+    .mySwiperDiag .swiper-wrapper{
+        right: 0vw;
+	}
+}
+
 @media (max-width: 700px){
     .mySwiperDiag .swiper-wrapper{
         rotate: 0deg;
@@ -820,8 +826,12 @@ button.swiper-pagination-bullet {
         rotate: 0deg;
     }
     .mySwiperDiag .swiper-wrapper{
-        right: 2vw;
+        right: 0vw;
 	}
+    .mySwiper .swiper-wrapper{
+        right: 10vw;
+        left: 0vw;
+    }
     .mySwiperDiag .swiper-button-next,
     .mySwiperDiag .swiper-button-prev {
     top:70vh;

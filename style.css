@@ -245,7 +245,7 @@ scale: 1.35;
 }
 
 .scroll-up nav{
-	filter: drop-shadow(0 -10 20px rgb(0, 0, 0));
+	filter: drop-shadow(0 -100px 30px rgb(0, 0, 0));
 	background-color: rgba(0, 0, 0, 0.5);
 	transition: all 0.5s;
 }
@@ -253,11 +253,5 @@ scale: 1.35;
 .nav-up nav{
 	background: #bdb7b3;
 	transition: all 0.7s ease-in-out;
-}
-
-@media (max-width: 768px){
-	.sec-exp img{
-		scale: 1;
-		}
 }
 
