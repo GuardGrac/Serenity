@@ -231,11 +231,12 @@ scale: 1.35;
 }
 
 .slider-img{
-	object-fit: contain;
+	object-fit: cover;
+	height: 500px;
 }
 
-.swipe-size{
-	height: 20vh;
+.slider-img2{
+	overflow: hidden;
 }
 
 .scroll-down nav{

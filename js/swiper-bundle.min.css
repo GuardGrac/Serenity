@@ -828,17 +828,13 @@ button.swiper-pagination-bullet {
     .mySwiperDiag .swiper-wrapper{
         right: 0vw;
 	}
-    .mySwiper .swiper-wrapper{
-        right: 10vw;
-        left: 0vw;
-    }
     .mySwiperDiag .swiper-button-next,
     .mySwiperDiag .swiper-button-prev {
     top:70vh;
     }
     .mySwiperDiag2 .swiper-button-next,
     .mySwiperDiag2 .swiper-button-prev {
-    top:65vh;
+    top:70vh;
     }
 }
 
