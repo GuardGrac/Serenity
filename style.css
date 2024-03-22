@@ -255,3 +255,39 @@ scale: 1.35;
 	transition: all 0.7s ease-in-out;
 }
 
+.flex-width{
+	width: calc(25% - 40px);
+}
+
+.flex-width-icons{
+	width: calc(16.6%);
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+	.flex-width{
+		width: calc(50% - 40px);
+	}
+}
+@media (max-width: 550px) {
+	.flex-width{
+		width: calc(100% - 40px);
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+	.flex-width-icons{
+		width: calc(33%);
+	}
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+	.flex-width-icons{
+		width: calc(50%);
+	}
+}
+@media (max-width: 550px) {
+	.flex-width-icons{
+		width: calc(100%);
+	}
+}
+
