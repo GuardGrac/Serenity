@@ -58,9 +58,9 @@
     rotate: 10deg;
 }
 
-.mySwiper .swiper-wrapper{
-    left: 2vw;
-}
+/* .mySwiper .swiper-wrapper{
+    margin-left: 2vw;
+} */
 
 .swiper-android .swiper-slide,
 .swiper-ios .swiper-slide,
@@ -291,7 +291,8 @@
     position: relative;
     height: var(--swiper-navigation-size);
     z-index: 255;
-    width: 100vw;
+    width: 30px;
+    bottom: 10vh;
     justify-content: start;
     cursor: pointer;
     display: flex;
@@ -303,12 +304,29 @@
     position: relative;
     height: var(--swiper-navigation-size);
     z-index: 255;
-    /* width: 100vw; */
+    width: 30px;
+    bottom: 10vh;
     cursor: pointer;
     display: flex;
     align-items: end;
     justify-content: end;
     color: var(--swiper-navigation-color, var(--swiper-theme-color))
+}
+
+.mySwiperDiag .swiper-button-prev{
+    bottom: 5vh;
+} 
+
+.mySwiperDiag .swiper-button-next{
+    bottom: 5vh;
+} 
+
+.mySwiper .swiper-button-prev{
+    bottom: 0vh;
+}
+
+.mySwiper  .swiper-button-next{
+    bottom: 0vh; 
 }
 
 /* .mySwiperDiag .swiper-button-next{
@@ -842,95 +860,107 @@ button.swiper-pagination-bullet {
     .mySwiperDiag .swiper-wrapper{
         right: 0vw;
 	}
-    /* .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:70vh;
-    }
-    .mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:70vh;
-    } */
 }
 
-/* @media (min-width: 450px) and (max-width: 600px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:80vh;
+@media (min-width: 200px) and (max-width: 549px){
+	.mySwiperDiag .swiper-button-prev{
+        bottom: 10vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        bottom: 10vh;
     }
-	.mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:75vh;
-    }
+
+    .mySwiperDiag2 .swiper-button-prev{
+        bottom: 5vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        bottom: 5vh;
+    }  
 }
 
-@media (min-width: 600px) and (max-width: 700px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:90vh;
+@media (min-width: 550px) and (max-width: 767px){
+	.mySwiperDiag .swiper-button-prev{
+        bottom: 5vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        bottom: 5vh;
     }
-	.mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:85vh;
-    }
+    
+    .mySwiperDiag2 .swiper-button-prev{
+        top: 5vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        top: 5vh;
+    }  
 }
 
-@media (min-width: 700px) and (max-width: 800px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:75vh;
+@media (min-width: 768px) and (max-width: 1023px){
+	.mySwiperDiag .swiper-button-prev{
+        bottom: 10vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        bottom: 10vh;
     }
-	.mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:70vh;
-    }
+    
+    .mySwiperDiag2 .swiper-button-prev{
+        top: 5vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        top: 5vh;
+    }   
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:75vh;
+@media (min-width: 1024px) and (max-width: 1279px){
+	.mySwiperDiag .swiper-button-prev{
+        bottom: 10vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        bottom: 10vh;
     }
-	.mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:85vh;
-    }
+    
+    .mySwiperDiag2 .swiper-button-prev{
+        top: 5vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        top: 5vh;
+    }  
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-    top:75vh;
+@media (min-width: 1280px) and (max-width: 1534px){
+	.mySwiperDiag .swiper-button-prev{
+        bottom: 10vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        bottom: 10vh;
     }
-	.mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:90vh;
-    }
-} */
-
-@media (min-width: 768px) {
-	.mySwiperDiag .swiper-wrapper{
-        right: 8vw;
-	}
-}
-/* 
-@media (min-width: 1440px) and (max-width: 1700px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-        top:90vh
-    }
-    .mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:90vh;
-    }
+    
+    .mySwiperDiag2 .swiper-button-prev{
+        top: 5vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        top: 5vh;
+    }  
 }
 
-@media (min-width: 1700px) {
-    .mySwiperDiag .swiper-button-next,
-    .mySwiperDiag .swiper-button-prev {
-        top:105vh
-    }
-    .mySwiperDiag2 .swiper-button-next,
-    .mySwiperDiag2 .swiper-button-prev {
-    top:100vh;
-    }
-} */
+
+@media (min-width: 1535px){
+    .mySwiperDiag2 .swiper-button-prev{
+        top: 10vh;
+    } 
+    
+    .mySwiperDiag2 .swiper-button-next{
+        top: 10vh;
+    }  
+}
+
+

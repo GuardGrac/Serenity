@@ -232,7 +232,7 @@ scale: 1.35;
 
 .slider-img{
 	object-fit: cover;
-	height: 500px;
+	height: 600px;
 }
 
 .slider-img2{
@@ -288,6 +288,12 @@ scale: 1.35;
 @media (max-width: 550px) {
 	.flex-width-icons{
 		width: calc(100%);
+	}
+}
+@media (min-width: 550px) and (max-width: 767px){
+	.slider-img{
+		object-fit: cover;
+		height: 700px;
 	}
 }
 
