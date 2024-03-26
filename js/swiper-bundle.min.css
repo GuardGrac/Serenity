@@ -908,11 +908,11 @@ button.swiper-pagination-bullet {
     }
     
     .mySwiperDiag2 .swiper-button-prev{
-        top: 5vh;
+        top: 0vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 5vh;
+        top: 0vh;
     }   
 }
 
@@ -926,11 +926,11 @@ button.swiper-pagination-bullet {
     }
     
     .mySwiperDiag2 .swiper-button-prev{
-        top: 5vh;
+        top: 0vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 5vh;
+        top: 0vh;
     }  
 }
 
@@ -944,11 +944,11 @@ button.swiper-pagination-bullet {
     }
     
     .mySwiperDiag2 .swiper-button-prev{
-        top: 5vh;
+        top: 0vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 5vh;
+        top: 0vh;
     }  
 }
 
