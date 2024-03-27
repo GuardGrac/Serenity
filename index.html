@@ -8,9 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/js/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="/js/sliderDiag.js"></script>
+    <script src="/js/sliderReviews.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
                 /** @type {import('tailwindcss').Config} */
     tailwind.config = {
@@ -32,13 +36,10 @@
             },
         },
     }
-       
-        
-
     </script>
     <title>Document</title>
 </head>
-<body class="bg-black overflow-x-hidden">
+<body class="bg-black">
     <nav class="w-screen bg-transparent text-white z-10 py-1 pt-[2vh] fixed 2xl:mx-auto xl:px-0 xl:mx-auto px-[8vw] 2xl:px-0">
             <div class="flex flex-row justify-between text-center items-center text-nowrap">
                 <div class="flex flex-row text-center items-center">
@@ -100,12 +101,12 @@
                 </button>     
             </header>
         </div>
-         <div class="slide w-screen h-[120vh]">
+        <div class="slide w-screen h-[120vh]">
             <img class="absolute h-[120vh] w-screen z-[-1] object-cover object-top select-none" src="/img/back.png" alt="">
-            <header class="ml-[13.3rem] flex flex-col justify-center bg-transparent h-[120vh] w-[100vh]">
-                <span class="mt-[57px] text-[90px] uppercase leading-[6rem] font-['FoglihtenNo06'] font-[10]">
-                    Студия интерьерного<br>
-                    дизайна
+            <header class="ml-[13vw] w-fit flex flex-col justify-center bg-transparent h-[120vh]">
+                <span class="mt-[5.45%] text-[85px] uppercase leading-[6rem] font-['FoglihtenNo06'] font-[10]">
+                    Студия интерьерного<br class="hidden 2xl:block">
+                    дизайна 
                 </span>
                 <p class="mt-[55px] italic text-[34px] tracking-[0.013em]">
                     Превращаем пространство в искусство
@@ -119,7 +120,7 @@
             </header>
         </div>
         <button class="btn btn-next"> 
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.35913 14.6985H20.9825" stroke="#E0E0E0"/>
                 <path d="M18.0311 11.5193L21.2099 14.6981L18.0311 17.8769" stroke="#E0E0E0"/>
                 <g opacity="0.7">
@@ -127,7 +128,7 @@
                 </g>
             </svg>                               
         </button>
-        <div class="w-[45px] absolute bottom-[40px] left-[49.45%] right-[0px] m-[0px]" id="scroll-button">
+        <div class="w-[45px] absolute bottom-[40px] left-[49.45%] right-[0px] m-[0px] btn" id="scroll-button">
            <svg viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.27147 16.7208C1.4857 19.2272 3.62235 21.3555 6.37636 21.6708C7.3891 21.7866 8.41876 21.868 9.4622 21.868C10.5056 21.868 11.5353 21.7866 12.548 21.6708C15.3021 21.3555 17.4386 19.2272 17.6529 16.7208C17.8014 14.984 17.9245 13.2026 17.9245 11.3874C17.9245 9.57218 17.8014 7.79075 17.6529 6.05397C17.4386 3.54749 15.3021 1.41917 12.548 1.10398C11.5353 0.988086 10.5056 0.906738 9.4622 0.906738C8.41876 0.906738 7.3891 0.988086 6.37636 1.10398C3.62235 1.41917 1.4857 3.54749 1.27147 6.05397C1.12302 7.79075 1 9.57218 1 11.3874C1 13.2026 1.12302 14.984 1.27147 16.7208Z" stroke="#E0E0E0"/>
                 <g class="mouse-anim">
@@ -136,7 +137,7 @@
             </svg>    
         </div> 
         <button class="btn btn-prev"> 
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
                 <path d="M11.7828 18.6663L8.60402 15.4875L11.7828 12.3087" stroke="#E0E0E0"/>
                 <g opacity="0.7">
@@ -145,7 +146,7 @@
             </svg>                
         </button>
      </div>
-     <section class="h-[30vh] w-screen flex flex-wrap gap-[40px] text-center items-center justify-center 2xl:mt-[26vh] mt-[10vh] text-[25px]" id="section_case">
+     <section class="w-screen flex flex-wrap gap-[40px] text-center items-center justify-center 2xl:mt-[26vh] mt-[10vh] text-[25px]" id="section_case">
        <div class="flex flex-col flex-width">
             <p class="2xl:text-[110px] text-8xl 2xl:h-[120px] font-['FoglihtenNo06'] font-[10]">
                 100%
@@ -183,7 +184,7 @@
             </p>
        </div>
     </section>
-    <section class="flex w-screen z-1 justify-center h-screen items-center 2xl:mt-[30vh] xl:mt-[30vh] md:mt-[60vh] sm:mt-[95vh] 2md:mt-[70vh] lg:mt-[70vh] mx-auto">
+    <section class="flex w-screen z-1 justify-center items-center mt-[30vh] mx-auto">
         <div class="flex 2xl:flex-row xl:flex-row flex-col w-full relative justify-evenly 2xl:items-center xl:items-center">
             <span class="2xl:text-[57px] xl:text-[54px] sm:text-[27px] md:text-[36px] 2md:text-[48px] lg:text-[56px] 2xl:pl-0 xl:pl-0 pl-[8vw] absolute uppercase font-['FoglihtenNo06'] 2xl:font-[1] font-[300] 2xl:leading-[86px] 2xl:-top-[120px] xl:-top-[120px] 2xl:left-36 xl:left-[50px] sm:-top-[11vh] md:-top-[14vh] 2md:-top-[19vh] lg:-top-[23vh] left-[0%]" style="user-select: none;">
                 Студия Serenity это<br class="block 2xl:hidden xl:hidden">творческое <br class="hidden 2xl:block xl:block">объединение
@@ -213,9 +214,9 @@
             </div>
         </div>
     </section>
-    <section class="flex w-screen z-1 justify-center h-screen items-center 2xl:mt-[10vh] md:mt-[60vh] sm:mt-[45vh] 2md:mt-[80vh] lg:mt-[115vh] xl:mt-[10vh]">
-        <div class="flex 2xl:flex-row xl:flex-row flex-col justify-around items-center mx-auto">
-                <img class="2xl:h-[800px] xl:h-[700px] w-[100vw] 2xl:w-fit xl:w-fit" src="/img/second_block.png" alt="">
+    <section class="flex w-screen z-1 justify-center items-center spacing-between-sec">
+        <div class="flex 2xl:flex-row xl:flex-row flex-col justify-around items-center mx-auto overflow-hidden">
+                <img class="2xl:h-[800px] xl:h-[700px] w-full 2xl:w-fit xl:w-fit object-cover aspect-square" src="/img/second_block.png" alt="">
             <div class="flex flex-col justify-between xl:justify-center 2xl:justify-center items-center w-[100vw] 2xl:w-[810px] xl:w-[710px] 2xl:h-[620px] xl:h-[620px] 2xl:ml-[135px] xl:ml-[3vw] mt-[5vh]">
                 <button class="flex flex-row p-3 2xl:p-0 xl:p-0 2xl:text-3xl xl:text-[30px] lg:text-3xl 2md:text-[28px] md:text-2xl text-xl uppercase justify-between items-center text-start w-full 2xl:h-[155px] xl:h-[125px] h-[10vh] bg-transparent border-gray-200/25 border-t-2 ">
                     <span class="opacity-[0.3] 2xl:text-5xl xl:text-5xl lg:text-5xl 2md:text-4xl md:text-4xl text-3xl font-[200]">
@@ -264,16 +265,16 @@
             </div>
         </div>
     </section>
-    <section class="flex w-screen 2xl:flex-row flex-col z-1 justify-center h-screen items-center 2xl:mt-[31vh] xl:mt-[20vh] md:mt-[45vh] sm:mt-[15vh] 2md:mt-[65vh] lg:mt-[105vh] mx-auto">
+    <section class="flex w-screen 2xl:flex-row flex-col z-1 justify-center items-center 2xl:items-end 2xl:justify-end mt-[20vh] mx-auto">
         <img class="w-screen 2xl:hidden xl:hidden block" src="/img/third_block.png" alt="">
-        <div class="flex 2xl:flex-row xl:flex-row flex-col w-full relative 2xl:justify-around 2xl:items-center mx-auto 2xl:basis-10/12">
+        <div class="flex 2xl:flex-row xl:flex-row flex-col w-full relative 2xl:justify-end 2xl:mx-0 mx-auto 2xl:basis-10/12">
             <span class="sm:text-[26px] 2xl:pl-0 pl-[8vw] 2xl:hidden md:hidden lg:hidden 2md:hidden xl:hidden sm:block uppercase font-[1] leading-[3.4rem] font-['FoglihtenNo06']">
                 С помощью грамотного
                 интерьера обеспечим выход
                 вашего бизнеса на <span class="text-[#F7B794]">новый</span>
                 <span class="text-[#F7B794]">уровень</span>
             </span>
-            <div class="flex flex-col w-full justify-center items-center 2xl:items-start 2xl:absolute 2xl:-bottom-[205px] 2xl:leading-7 2xl:left-[62px] xl:items-start xl:absolute xl:-bottom-[0px] xl:leading-7 xl:left-[62px] font-[100]">
+            <div class="flex flex-col w-full justify-center items-center 2xl:items-start 2xl:absolute 2xl:bottom-[280px] 2xl:leading-7 2xl:right-[20px] xl:items-start xl:absolute xl:-bottom-[0px] xl:leading-7 xl:left-[62px] font-[100]">
                 <span class="2xl:text-[42px] xl:text-[36px] sm:text-[26px] 2xl:pl-0 xl:pl-0 lg:pl-0 pl-[8vw] md:text-[36px] 2md:text-[48px] lg:text-[56px] sm:hidden mr-[3vw] md:mr-0 2xl:mr-0 xl:mr-0 uppercase font-[1] lg:leading-[5rem] 2md:leading-[4rem] leading-[3.4rem] font-['FoglihtenNo06']">
                     С помощью грамотного<br class="md:hidden">
                     интерьера обеспечим выход<br class="md:hidden">
@@ -290,8 +291,8 @@
                     </button> 
                 </div>
             </div>
-            <img class="2xl:h-[100vh] 2xl:w-[1350px] xl:h-[800px] xl:w-[1100px] object-cover overflow-hidden w-screen 2xl:order-last xl:order-last order-first 2xl:block xl:block hidden mr-[12vw] 2xl:mr-0 xl:mr-0 2xl:absolute xl:absolute 2xl:-right-[20%] xl:-right-[20%] xl:-bottom-[30vh]" style="user-select: none; z-index: -1!important;" src="/img/third_block.png" alt="">
-            <div class="absolute 2xl:bottom-[300px] xl:bottom-[380px] 2xl:block xl:block hidden 2xl:left-[444px] xl:left-[564px]">
+            <img class="2xl:h-[900px] 2xl:w-[1100px] xl:h-[800px] xl:w-[1100px] object-cover aspect-square w-screen 2xl:order-last xl:order-last order-first 2xl:block xl:block hidden mr-[12vw] 2xl:mr-0 xl:mr-0" style="user-select: none; z-index: -1!important;" src="/img/third_block.png" alt="">
+            <div class="absolute 2xl:bottom-[770px] z-40 xl:bottom-[380px] 2xl:block xl:block hidden 2xl:left-[400px] xl:left-[564px]">
                  <svg id="circle" class="w-[245px]"  viewBox="-20 -30 430 430" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="none" class="path-circle" id="path-circle" d="M390.5 194.5C390.5 96 308.5 0.500012 195.5 0.5C82.5 0.499988 0.500011 97.5 0.5 194.5C0.49999 283 83.5 388 195.5 388C314.5 388 390.5 284 390.5 194.5Z" stroke="white"/>
                         <text fill="white" class="text-anim3 uppercase tracking-[0.35em]" font-size="25.5">
@@ -304,7 +305,7 @@
                                           
         </div>
     </section>
-      <section class="flex w-screen z-1 justify-center h-screen items-center 2xl:mt-[50vh] xl:mt-[30vh] sm:mt-[25vh] md:mt-[35vh] 2md:mt-[45vh] lg:mt-[55vh] mx-auto">
+      <section class="flex w-screen z-1 justify-center items-center spacing-between-sec mx-auto">
         <div class="flex flex-col w-screen justify-around text-start items-start mx-auto">
             <p class="2xl:pl-[12vw] xl:pl-[10vw] pl-[8vw] font-['FoglihtenNo06'] 2xl:text-[62px] xl:text-[58px] lg:text-[56px] sm:text-[36px] md:text-[42px] 2md:text-[48px] uppercase 2xl:h-[70px] font-[10]">
                 П<span class="2xl:-tracking-[1.25rem] xl:-tracking-[1.25rem] -ml-[0.25rem] 2xl:pr-4 xl:pr-4">ос</span>мотрите наши
@@ -386,15 +387,31 @@
                             </button>
                         </div>
                 </div>
-                <div class="flex w-[95vw] justify-between">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>  
+                <div class="flex w-[95vw] justify-between sm:hidden md:hidden">
+                    <div class="swiper-button-prev">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
+                            <path d="M11.7828 18.6663L8.60402 15.4875L11.7828 12.3087" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0928" r="13.9072" transform="rotate(-180 14.907 15.0928)" stroke="#E0E0E0"/>
+                            </g>
+                        </svg>  
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.35913 14.6985H20.9825" stroke="#E0E0E0"/>
+                            <path d="M18.0311 11.5193L21.2099 14.6981L18.0311 17.8769" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0927" r="13.9072" stroke="#E0E0E0"/>
+                            </g>
+                        </svg> 
+                    </div>  
                 </div>
                 
             </div>
         </div>
     </section>
-    <section class="flex flex-col w-screen z-1 font-['FoglihtenNo06'] justify-center h-screen items-center 2xl:mt-[35vh] xl:mt-[20vh] lg:mt-[50vh] md:mt-[60vh] sm:mt-[115vh] 2md:mt-[55vh] mx-auto sec-exp">
+    <section class="flex flex-col w-screen z-1 font-['FoglihtenNo06'] justify-center items-center spacing-between-sec mx-auto sec-exp">
         <span class="flex flex-col w-screen 2xl:text-[64px] xl:text-[54px] lg:text-[56px] sm:text-[36px] md:text-[42px] 2md:text-[48px] xl:pl-[10vw] 2xl:pl-52 pl-[8vw] uppercase 2xl:leading-[5.3rem] xl:leading-[5rem] lg:leading-[4.6rem] 2md:leading-[4rem] leading-[3.3rem] text-start  font-[100]">
             Нашему опыту и профессионализму
             <span class="text-[#F7B794] text-start">
@@ -452,7 +469,7 @@
             </div>
         </div>
     </section>
-    <section class="flex w-screen z-1 justify-center h-screen items-center 2xl:mt-[15vh] xl:mt-[15vh] md:mt-[50vh] sm:mt-[105vh] 2md:mt-[50vh] lg:mt-[50vh] mx-auto">
+    <section class="flex w-screen z-1 justify-center items-center spacing-between-sec mx-auto">
         <div class="flex flex-col w-screen h-screen justify-evenly items-start mx-auto">
             <div class="2xl:pl-56 xl:pl-[10vw] pl-[8vw] 2xl:text-[64px] xl:text-[58px] lg:text-[56px] sm:text-[36px] md:text-[42px] 2md:text-[48px] uppercase 2xl:mb-20 xl:mb-20 mb-0">
                 <p class="font-['FoglihtenNo06']">Блог
@@ -473,10 +490,10 @@
             <div class="2xl:pt-[10vh] pt-[6vh]"></div>
             <div class="mySwiperDiag mySwiperDiag2 swiper w-screen h-[100vh] items-center justify-center flex flex-col">
                 <div class="swiper-wrapper flex flex-row w-screen h-screen">
-                    <div class="swiper-slide flex flex-col">
+                    <div class="swiper-slide flex flex-col slider-img2">
                         <img class="slider-img" src="/img/Sixth_block1.png" alt="">
                         <button class="bg-transparent flex flex-col justify-between items-start">
-                            <div class="flex flex-col items-start justify-between w-full pl-[2vw] slider-img2">
+                            <div class="flex flex-col items-start justify-between w-full pl-[2vw]">
                                     <p class="pt-[2vh] pb-5 text-xl opacity-50">
                                         #Бизнес
                                     </p>
@@ -542,14 +559,30 @@
                         </button>
                     </div>      
                 </div>
-                <div class="flex w-[95vw] justify-between">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>  
+                <div class="flex w-[95vw] justify-between sm:hidden md:hidden">
+                    <div class="swiper-button-prev">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
+                            <path d="M11.7828 18.6663L8.60402 15.4875L11.7828 12.3087" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0928" r="13.9072" transform="rotate(-180 14.907 15.0928)" stroke="#E0E0E0"/>
+                            </g>
+                        </svg>  
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.35913 14.6985H20.9825" stroke="#E0E0E0"/>
+                            <path d="M18.0311 11.5193L21.2099 14.6981L18.0311 17.8769" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0927" r="13.9072" stroke="#E0E0E0"/>
+                            </g>
+                        </svg> 
+                    </div>  
                 </div>
             </div>
         </div>
     </section>
-    <section class="flex w-screen justify-center h-screen items-center 2xl:mt-[75vh] xl:mt-[65vh] lg:mt-[65vh] md:mt-[50vh] sm:mt-[45vh] 2md:mt-[50vh]">
+    <section class="flex w-screen justify-center items-center spacing-between-sec">
         <div class="flex flex-col w-screen h-screen items-start 2xl:mx-20 mx-auto">
             <div class="2xl:pl-[8vw] xl:pl-[10vw] pl-[8vw] 2xl:text-[63px] xl:text-[58px] lg:text-[56px] sm:text-[36px] md:text-[42px] 2md:text-[48px] uppercase">
                 <p class="font-['FoglihtenNo06']">Что говорят наши<br class="hidden 2md:block"> клиенты о 
@@ -612,13 +645,29 @@
                             </blockquote>
                         </div>
                 </div>
-                <div class="flex w-[95vw] justify-between">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>  
+                <div class="flex w-[95vw] justify-between sm:hidden md:hidden">
+                    <div class="swiper-button-prev">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.4548 15.4871L8.83144 15.4871" stroke="#E0E0E0"/>
+                            <path d="M11.7828 18.6663L8.60402 15.4875L11.7828 12.3087" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0928" r="13.9072" transform="rotate(-180 14.907 15.0928)" stroke="#E0E0E0"/>
+                            </g>
+                        </svg>  
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.35913 14.6985H20.9825" stroke="#E0E0E0"/>
+                            <path d="M18.0311 11.5193L21.2099 14.6981L18.0311 17.8769" stroke="#E0E0E0"/>
+                            <g opacity="0.7">
+                            <circle cx="14.907" cy="15.0927" r="13.9072" stroke="#E0E0E0"/>
+                            </g>
+                        </svg> 
+                    </div>  
                 </div>
         </div>
     </section>
-    <footer class="flex w-screen justify-center h-[50vh] 2xl:mt-[15vh] mt-[10vh] items-center mx-auto">
+    <footer class="flex w-screen justify-center spacing-between-sec items-center mx-auto">
         <div class="flex flex-col w-screen items-center leading-[2rem]">
             <span class="mx-5 2xl:text-[86px] text-5xl text-center relative line1 italiana py-5">
             SERENITY
@@ -636,7 +685,7 @@
                 </g>
                 </svg>         
             </div> 
-            <div class="flex 2xl:flex-row flex-col w-[92%] items-center text-lg 2xl:pt-[10vh] pt-[5vh] justify-between">
+            <div class="flex 2xl:flex-row flex-col w-[92%] items-center text-center text-lg 2xl:pt-[10vh] pt-[5vh] justify-between">
                 <span class="2xl:py-0 py-[1vh]">
                     © Serenity Interior. Все права защищены️
                 </span>
@@ -660,17 +709,15 @@
             </ul>
         </header>
     </div>
-     <script src="/js/slider.js"></script>
+    <script src="/js/swiper.js"></script>
      <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
      <script src="/js/burger/burger.js"></script>
      <script src="/js/lenis/lenis.js"></script>
      <script src="/js/dropDown.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script>
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -756,7 +803,7 @@
         }});
      </script>
      <script>
-        console.clear(); // Start with a clean console on refesh
+        // console.clear(); // Start with a clean console on refesh
         gsap.defaults({ease: "none"});
         const tl = gsap.timeline( {repeat:-1, repeatDelay: 1} )
         .to('.mouse-anim',{

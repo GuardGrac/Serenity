@@ -291,9 +291,8 @@
     position: relative;
     height: var(--swiper-navigation-size);
     z-index: 255;
-    width: 30px;
+    width: 60px;
     bottom: 10vh;
-    justify-content: start;
     cursor: pointer;
     display: flex;
     align-items: start;
@@ -304,12 +303,11 @@
     position: relative;
     height: var(--swiper-navigation-size);
     z-index: 255;
-    width: 30px;
+    width: 60px;
     bottom: 10vh;
     cursor: pointer;
     display: flex;
     align-items: end;
-    justify-content: end;
     color: var(--swiper-navigation-color, var(--swiper-theme-color))
 }
 
@@ -404,7 +402,7 @@ top: 107vh
     right: 10vw !important; 
 } */
 
-.swiper-button-next:after,
+/* .swiper-button-next:after,
 .swiper-button-prev:after {
     font-family: swiper-icons;
     
@@ -423,7 +421,7 @@ top: 107vh
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: 'next'
-}
+} */
 
 .swiper-pagination {
     position: absolute;
@@ -936,11 +934,11 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1280px) and (max-width: 1534px){
 	.mySwiperDiag .swiper-button-prev{
-        bottom: 10vh;
+        bottom: 5vh;
     } 
     
     .mySwiperDiag .swiper-button-next{
-        bottom: 10vh;
+        bottom: 5vh;
     }
     
     .mySwiperDiag2 .swiper-button-prev{
@@ -954,6 +952,14 @@ button.swiper-pagination-bullet {
 
 
 @media (min-width: 1535px){
+    .mySwiperDiag .swiper-button-prev{
+        top: 0vh;
+    } 
+    
+    .mySwiperDiag .swiper-button-next{
+        top: 0vh;
+    }  
+
     .mySwiperDiag2 .swiper-button-prev{
         top: 10vh;
     } 
