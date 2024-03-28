@@ -860,58 +860,22 @@ button.swiper-pagination-bullet {
 	}
 }
 
-@media (min-width: 200px) and (max-width: 549px){
-	.mySwiperDiag .swiper-button-prev{
-        bottom: 10vh;
-    } 
-    
-    .mySwiperDiag .swiper-button-next{
-        bottom: 10vh;
-    }
-
-    .mySwiperDiag2 .swiper-button-prev{
-        bottom: 5vh;
-    } 
-    
-    .mySwiperDiag2 .swiper-button-next{
-        bottom: 5vh;
-    }  
-}
-
-@media (min-width: 550px) and (max-width: 767px){
-	.mySwiperDiag .swiper-button-prev{
-        bottom: 5vh;
-    } 
-    
-    .mySwiperDiag .swiper-button-next{
-        bottom: 5vh;
-    }
-    
-    .mySwiperDiag2 .swiper-button-prev{
-        top: 5vh;
-    } 
-    
-    .mySwiperDiag2 .swiper-button-next{
-        top: 5vh;
-    }  
-}
-
 @media (min-width: 768px) and (max-width: 1023px){
 	.mySwiperDiag .swiper-button-prev{
-        bottom: 10vh;
+        bottom: 20vh;
     } 
     
     .mySwiperDiag .swiper-button-next{
-        bottom: 10vh;
+        bottom: 20vh;
     }
-    
+
     .mySwiperDiag2 .swiper-button-prev{
-        top: 0vh;
+        bottom: 20vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 0vh;
-    }   
+        bottom: 20vh;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px){
@@ -922,14 +886,6 @@ button.swiper-pagination-bullet {
     .mySwiperDiag .swiper-button-next{
         bottom: 10vh;
     }
-    
-    .mySwiperDiag2 .swiper-button-prev{
-        top: 0vh;
-    } 
-    
-    .mySwiperDiag2 .swiper-button-next{
-        top: 0vh;
-    }  
 }
 
 @media (min-width: 1280px) and (max-width: 1534px){
@@ -942,11 +898,11 @@ button.swiper-pagination-bullet {
     }
     
     .mySwiperDiag2 .swiper-button-prev{
-        top: 0vh;
+        top: 5vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 0vh;
+        top: 5vh;
     }  
 }
 
@@ -961,11 +917,11 @@ button.swiper-pagination-bullet {
     }  
 
     .mySwiperDiag2 .swiper-button-prev{
-        top: 10vh;
+        top: 5vh;
     } 
     
     .mySwiperDiag2 .swiper-button-next{
-        top: 10vh;
+        top: 5vh;
     }  
 }
 
