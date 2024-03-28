@@ -17,4 +17,3 @@ const swiperDiag = new Swiper('.mySwiperDiag', {
     loop: true,
     }  
     }});
-    console.log(swiperDiag);
